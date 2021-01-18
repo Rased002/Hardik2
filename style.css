@@ -1,0 +1,218 @@
+
+:root{
+    --primary: #0275d8;
+    --info:#5bc0de;
+    --danger:#d9534f;
+    --warning:#f0ad4e;
+    --success:#228B22;
+    --purple:#800080 ;
+}
+
+*{
+    margin: 0;
+    font-family:Roboto slab;
+}
+
+a{
+    text-decoration: none;
+}
+
+button:hover, a:hover{
+    transform: scale(1.2);
+}
+
+button:active, a:active{
+    transform: scale(1);
+}
+
+.welcome{
+    background-color: var(--info);
+    height:550px;
+}
+
+.banner{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height:100%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.navigation{
+    background-color: var(--primary);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70%;
+    margin:auto;
+    padding:1em 0;
+    color: var(--purple);
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+li{
+    display:inline;
+    padding:0 1em;
+}
+
+.welcome-image img{
+    max-width: 250px;
+}
+
+#welcome-p{
+    max-width: 400px;
+    margin:1em 0 1em 0;
+    line-height: 1.5em;
+    color: var(--success);
+    font-size:1.2em;
+}
+
+#discord-btn{
+    background-color:var(--info);
+    border-width:  0 0 2px 0;
+    border-style: solid;
+    border-color: var(--primary);
+    margin-top: 2em;
+    padding-bottom: 0.5em;
+}
+
+#discord-link{
+    color: var(--primary);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#header{
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+#brand{
+    font-size: 1.5em;
+}
+
+#about-section{
+    height:550px;
+    background-color: var(--primary);
+    color: var(--purple);
+    font-size: 1.2em;
+}
+
+.about{
+    margin: auto;
+    display: flex;
+    justify-items: space-between;   
+    max-width: 80%; 
+    height: 100%;
+    align-items: center;
+}
+
+.about > div{
+    margin: 0 2em;
+}
+
+.about-header{
+    margin-bottom:1em;
+}
+
+.about-text{
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.about img{
+    max-width: 200px;
+}
+.user-experiences{
+    height: 650px;
+    background-color: var(--info);
+}
+.users{
+    margin: auto;
+    max-width: 80%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:5%;
+    justify-items:center;
+    text-align: center;
+}
+
+.users > div{
+    max-width: 200px;
+    background-color: var(--primary);
+    border-radius: 2%;
+    min-height: 500px;
+}
+
+.user-experiences img{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20%;
+}
+
+.user-header{
+    text-align:center;
+    font-size: 2em;
+    margin: 0 0 2rem 0;
+    padding-top: 2rem;
+}
+
+.user-experiences p{
+    max-width: 100%;
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: var(--primary);
+}
+
+figcaption{
+    margin-top: 30px;
+}
+
+@media(max-width:700px){
+    .welcome-image img{
+        display:none;
+    }
+    .about-img{
+        display:none;
+        margin: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .about img{
+        display:none;
+    }
+
+    .users{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .user-experiences{
+        height: 1800px;
+    }
+
+    .about{
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-section{
+        height: 400px;
+    }
+
+ 
+}
